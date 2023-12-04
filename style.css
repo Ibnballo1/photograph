@@ -31,7 +31,7 @@ html {
     --header3: calc(3rem + 1vw);
     --header4: calc(2.4rem + 1vw);
     --text: calc(1.5rem + 1vw);
-    --big: calc(2.4rem + 1vw);
+    --big: calc(7rem + 1vw);
     --special-colors: #906272;
     --background-color: #414141;
     --grey-text: #525252;
@@ -295,6 +295,73 @@ nav {
     text-align: center;
 }
 
+/* CONTACT SECTION */
+.contact {
+    min-height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-wrapper {
+    flex: 3 1 40rem;
+}
+
+.form-wrapper h2 {
+    margin: 5rem 0rem;
+}
+
+.form-wrapper span {
+    font-size: var(--big);
+    color: var(--special-colors);
+}
+
+.form-wrapper label {
+    display: block;
+}
+
+.form-wrapper input {
+    display: block;
+    margin: 3rem 0rem;
+    background: var(--background-color);
+    color: #fff;
+    border: none;
+    padding: 1rem;
+}
+
+.form-wrapper button {
+    padding: 1rem 8rem;
+    color: #fff;
+    background: var(--special-colors);
+    border: none;
+    width: 100%;
+}
+
+.contact img {
+    flex: 1 1 40rem;
+}
+
+/* FOOTER SECTION */
+footer {
+    background: var(--background-color);
+    color: #fff;
+    display: flex;
+    padding: 3rem 5%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h4 {
+    flex: 4 1 40rem;
+    font-size: calc(1.3rem + 1vw);
+}
+
 @media only screen and (max-width: 734px) {
     .hero-intro p {
         padding: 5rem 3rem;
@@ -381,6 +448,10 @@ nav {
     }
 
     .gallery-head {
+        display: none;
+    }
+
+    .contact img {
         display: none;
     }
 }
