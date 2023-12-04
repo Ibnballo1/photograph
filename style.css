@@ -370,6 +370,7 @@ footer h4 {
     .burger {
         position: relative;
         display: block;
+        cursor: pointer;
     }
 
     .burger span {
@@ -402,12 +403,9 @@ footer h4 {
         transform: translate(-100%);
     }
 
-    .toggle {
-        background-color: #fff;
-    }
-
     .toggle .line1 {
         transform: rotateZ(45deg) translateY(300%);
+        background: #fff;
     }
 
     .toggle .line2 {
@@ -416,6 +414,7 @@ footer h4 {
 
     .toggle .line3 {
         transform: rotateZ(-45deg) translateY(-300%);
+        background: #fff;
     }
 
     /* ABOUT SECTION */
